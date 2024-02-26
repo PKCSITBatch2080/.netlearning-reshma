@@ -14,11 +14,10 @@ class Methods
         return bmi;
     }
     public double GetMax(params double[] numbers) =>numbers.Max();
-    public void GetMinMax(params int[] numbers)
+    public (int, int) GetMinMax(params int[] numbers)
     {
         var smallest=numbers.Min();
+        var highest=numbers.Max();
+        return(smallest,highest);
     }
-
-
-    
     }

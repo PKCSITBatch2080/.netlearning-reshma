@@ -1,15 +1,11 @@
 using System;
+using System.Linq;
 
 class Methods
 {
-    void Greet()
-    {
-        Console.WriteLine("Hey, there!");
-    }
+    public void Greet() => Console.WriteLine("Hey, there!");
 
-   public void Greet(string greeting){
-        Console.WriteLine($"{greeting}, there!"); //string interpolation
-    }
+   public void Greet(string greeting)=> Console.WriteLine($"{greeting}, there!"); //string interpolation
 
     public  float CalculateBMI(float weightInkg, float heightInFt)
     {
@@ -17,6 +13,12 @@ class Methods
         var bmi = weightInkg/(heightInM * heightInM);
         return bmi;
     }
+    public double GetMax(params double[] numbers) =>numbers.Max();
+    public void GetMinMax(params int[] numbers)
+    {
+        var smallest=numbers.Min();
+    }
+
 
     
-}
+    }

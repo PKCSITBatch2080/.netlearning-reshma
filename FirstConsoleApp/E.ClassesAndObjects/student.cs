@@ -30,13 +30,13 @@ class student
       }
     }
     public string address{get;set;} //auto implemented property
-    DateTime dob;
+    public DateTime Dob {get;}
     
-    public void DisplayInfo()
+    public virtual void DisplayInfo()
     {
         Console.WriteLine($"student Name: {name}");
         Console.WriteLine($"student RollNumber: {rollnumber}");
-        Console.WriteLine($"DOB: {dob}");
+        Console.WriteLine($"DOB: {Dob}");
         Console.WriteLine($"Address: {address}");
 
 

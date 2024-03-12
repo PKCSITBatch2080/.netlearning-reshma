@@ -18,15 +18,21 @@ Generics g=new();
 g.Display<string>("jhhfd");
 g.Display<int>(786);
 
-var reshma=new student();
-var smriti=new student("smriti kc",13);
+//var reshma=new student();
+//var smriti=new student("smriti kc",13);
 
-reshma.RollNumber=22;  //Assigned
-smriti.RollNumber=223;  //not assign
+//reshma.RollNumber=22;  //Assigned
+//smriti.RollNumber=223;  //not assign
 
 //smriti.Dob=DateTime.Now;
 CSStudent rekha=new CSStudent("rekha aryal",24,"Hospital Management System");
 rekha.DisplayInfo();
 
-var sapana=new CyberSecurityStudent("Sapana Shrestha",11,"HMS","Redhat");
-sapana.DisplayInfo();
+//var sapana=new CyberSecurityStudent("Sapana Shrestha",11,"HMS","Redhat");
+//sapana.DisplayInfo();
+
+// var sapana=new CyberSecurityStudent{"Sapana Shrestha",11,"HMS","RedHat"};
+// sapana.DisplayInfo();
+
+CyberSecurityStudent.Do();
+FDHandling.CreateFile();

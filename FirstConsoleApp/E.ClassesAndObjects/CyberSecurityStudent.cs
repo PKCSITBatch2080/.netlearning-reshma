@@ -18,5 +18,9 @@ class CyberSecurityStudent:CSStudent
         Console.WriteLine($"Certified Data:{CertifiedDate}");
 
     }
+    public static void Do()
+    {
+        
+    }
 }
 
